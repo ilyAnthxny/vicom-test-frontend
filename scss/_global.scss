@@ -65,7 +65,59 @@ h3, span{
     font-size: 14px;
 }
 
+button{
+    cursor: pointer;
+}
+
 .nav__icon{
     height: 30px;
     width: 30px;
+}
+
+
+.slick-arrow{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    font-size: 0;
+    border: 3px solid #EBA904;
+}
+
+.slick-prev{
+    background-image: url("../assets/images/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+
+}
+
+.slick-next{
+    background-image: url("../assets/images/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute; 
+}
+
+
+.slick-dots{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    li{
+        display: flex;
+    }
+
+    button{
+        display: flex;
+        border-radius: 50%;
+        border: 1px solid #EBA904;
+        font-size: 0;
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        cursor: pointer;
+    }
 }

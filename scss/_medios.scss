@@ -203,4 +203,50 @@
         }
     }
 
+
+    // Slick slider
+
+
+    
+    .cards__container{
+        display: grid;
+        gap: 10px;
+        grid-auto-flow: dense;
+
+        .slick-inizialited{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+
+        .slick-list{
+            grid-column: 1/5;
+        }
+
+        .slick-prev{
+            grid-column: 3/4;
+            position: absolute;
+            z-index: 1;
+            top: -80px;
+            left: 500px;
+        }
+
+        .slick-next{
+            grid-column: 4/5;
+            position: absolute;
+            z-index: 1;
+            right: 75px;
+            top: -80px;
+
+        }
+
+        .slick-dots{
+            grid-column: 1/5;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+
 }

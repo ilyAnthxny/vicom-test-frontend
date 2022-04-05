@@ -41,6 +41,7 @@
     padding: 10px;
     border-top: 50px;
     position: absolute;
+    width: 100%;
 
     &__logo-img{
         width: 150px;
@@ -110,12 +111,13 @@
     padding: 10px;
 }
 
+
 .card__img-container{
     @include d-flex(center, center, nowrap);
     width: 150px;
     height: 150px;
     background: #EEEEEE;
-
+    margin: auto;
     img{
         display: block;
     }
@@ -124,6 +126,7 @@
 
 .container__card{
     @include d-flex(center, center, wrap);
+    width: 100%
 }
 
 .card__info{
@@ -191,6 +194,22 @@
     p{
         font-size: 14px;
     }
+}
+
+
+
+.slick-next{
+    right: 10px;
+    top: 50px;
+}
+
+.slick-prev{
+    left: 10px;
+    top: 50px
+}
+
+.slick-dots{
+    padding: 0;
 }
 
 @import "medios";

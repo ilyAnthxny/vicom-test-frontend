@@ -58,9 +58,69 @@ h3, span {
   font-size: 14px;
 }
 
+button {
+  cursor: pointer;
+}
+
 .nav__icon {
   height: 30px;
   width: 30px;
+}
+
+.slick-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-size: 0;
+  border: 3px solid #EBA904;
+}
+
+.slick-prev {
+  background-image: url("../assets/images/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.slick-next {
+  background-image: url("../assets/images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slick-dots li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-dots button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid #EBA904;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  cursor: pointer;
 }
 
 .header {
@@ -114,6 +174,7 @@ h3, span {
   padding: 10px;
   border-top: 50px;
   position: absolute;
+  width: 100%;
 }
 
 .nav__logo-img {
@@ -228,6 +289,7 @@ h3, span {
   width: 150px;
   height: 150px;
   background: #EEEEEE;
+  margin: auto;
 }
 
 .card__img-container img {
@@ -247,6 +309,7 @@ h3, span {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 .card__info {
@@ -345,6 +408,20 @@ h3, span {
 
 .character__container p {
   font-size: 14px;
+}
+
+.slick-next {
+  right: 10px;
+  top: 50px;
+}
+
+.slick-prev {
+  left: 10px;
+  top: 50px;
+}
+
+.slick-dots {
+  padding: 0;
 }
 
 @media (min-width: 1024px) {
@@ -562,5 +639,56 @@ h3, span {
   .character .card__img-container {
     width: 300px;
     height: 300px;
+  }
+  .cards__container {
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: dense;
+  }
+  .cards__container .slick-inizialited {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .cards__container .slick-list {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+  .cards__container .slick-prev {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 500px;
+  }
+  .cards__container .slick-next {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    position: absolute;
+    z-index: 1;
+    right: 75px;
+    top: -80px;
+  }
+  .cards__container .slick-dots {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
