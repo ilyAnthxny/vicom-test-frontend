@@ -1,0 +1,208 @@
+@import "global";
+@import "mixin";
+
+.header{
+    height: 42px;
+    max-width: 100%;
+    display: block;
+
+    &__text-container{
+        color: #fff;
+        text-align: center;
+        @include d-flex(center, center, wrap);
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 14px;
+        width: 100%;
+        background: #EBA904;
+    }
+}
+
+
+.banner__img{
+    width: 100%;
+    max-width: 768px;
+}
+
+
+.nav__items{
+    font-size: 15px;
+}
+
+.hamburger{
+    height: 20px;
+    width: 20px;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 10%;
+    padding: 10px;
+    border-top: 50px;
+    position: absolute;
+
+    &__logo-img{
+        width: 150px;
+    }
+
+    &__icons{
+        @include d-flex(right, center, nowrap)
+    }
+
+    &__icon{
+        border: 20px;
+        cursor: pointer;
+        margin: 3px;
+    }
+
+    &__logo{
+        padding: 10px;
+    }
+    
+    &__items{
+        display: none;
+    }
+
+}
+
+
+.main__banner{
+    height: 100px;
+    width: 100%;
+    @include d-flex(center, center, wrap);
+    margin: 20px 0 20px 0;
+    margin-top: 40px;
+    margin-bottom: 0;
+
+    img{
+        height: 30px;
+    }
+}
+
+
+// Main
+
+.services__img{
+    width: 50%;
+    max-width: 768px;
+}
+
+.container__services{
+    @include d-flex(flex-start, center, wrap);
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    .section__service{
+        width: 50%;
+    }
+}
+
+
+// Cards
+
+.cards__title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    font-style: bold;
+    padding: 10px;
+}
+
+.card__img-container{
+    @include d-flex(center, center, nowrap);
+    width: 150px;
+    height: 150px;
+    background: #EEEEEE;
+
+    img{
+        display: block;
+    }
+}
+
+
+.container__card{
+    @include d-flex(center, center, wrap);
+}
+
+.card__info{
+    @include d-flex(center, center, wrap);
+    margin: 14px;
+
+    h3{
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    a, p{
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+// Questions
+
+.questions___item{
+    margin: 10px;
+    margin-top: 20px;
+    h2{
+        display: block;
+        width: 100%;
+        text-align: left;
+        @include d-flex(space-between, flex-start, nowrap);
+        cursor: pointer;
+        border-bottom: 1px solid #999;
+    }
+
+    span{
+        text-align: right;
+        text-transform: scale(1.1);
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+
+
+
+.character__subtitle{
+    text-align: center;
+    font-size: 26px;
+}
+
+.character__img{
+    @include d-flex(center, center, nowrap)
+}
+
+.character__container{
+
+    margin: 10px;
+    margin-top: 20px;
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+@import "medios";
+
+
+
+
+
+
+
+
+
+
+
+

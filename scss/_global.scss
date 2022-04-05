@@ -1,0 +1,71 @@
+
+// Fonts
+@font-face {
+    font-family: "MuseoSans300";
+    src: url("../assets/fonts/MuseoSans-300.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "MuseoSans500";
+    src: url("../assets/fonts/MuseoSans-500.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "MuseoSans700";
+    src: url("../assets/fonts/MuseoSans-700.ttf");
+    font-weight: 700;
+}
+
+$font-primary: "MuseoSans300";
+$font-secundary: "MuseoSans500";
+$font-ters: "MuseoSans700;";
+
+*{ 
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: $font-primary;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    color: black;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 50%;
+        height: 2px;
+        background-color: #EBA904;
+        bottom: -4px;
+        left: 0px;
+
+    }
+}
+
+h2{
+    font-weight: bold;
+}
+
+h3, span{
+    font-size: 14px;
+}
+
+.nav__icon{
+    height: 30px;
+    width: 30px;
+}

@@ -1,0 +1,8 @@
+@mixin d-flex($principal, $cruzado, $wrap){
+    display: flex;
+    justify-content: center;
+    justify-content: $principal;
+    align-items: $cruzado;
+    flex-wrap: $wrap;
+}
+
