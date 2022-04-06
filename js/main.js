@@ -55,5 +55,29 @@ $('.cards__container').slick({
   }
 
   
+  // Character
+
+  const image = document.getElementById("image")
+  const name = document.getElementById("name")
+  const gender = document.getElementById("gender")
+  const episodeList = document.getElementById("episodes")
+
+  fetch("https://rickandmortyapi.com/api/character/2")
+  .then(res => res.ok ? Promise.resolve(res): Promise.reject(res))
+  .then(res => res.json())
+  .then(res => {
+    image.setAttribute("src", `${res.image}`)
+    name.innerHTML = `${res.name}`;
+    gender.innerHTML = `${res.gender}`;
+
+    for(i = 0; i<5; i++){
+      const episode = document.createElement("LI")
+      episode.setAttribute("class", "episode")
+      episode.textContent = res.episode[i]
+      episodeList.appendChild(episode)
+    }
+  })
+  .catch(err => console.log(err))
+  
 
 

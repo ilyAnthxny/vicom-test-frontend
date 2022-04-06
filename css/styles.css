@@ -62,6 +62,10 @@ button {
   cursor: pointer;
 }
 
+.character__text {
+  font-weight: 300;
+}
+
 .nav__icon {
   height: 30px;
   width: 30px;
@@ -705,5 +709,8 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .episodes {
+    padding: 0;
   }
 }
