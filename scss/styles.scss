@@ -176,7 +176,7 @@
     }
 
     .active{
-        height: 120px;
+        height: 160px;
     }
 
     .rotate{
@@ -192,16 +192,24 @@
 .character__subtitle{
     text-align: center;
     font-size: 26px;
+    width: 100%;
+    display: block;
 }
 
 .character__img{
-    @include d-flex(center, center, nowrap)
+    display: block;
+    margin: auto;
+    width: 100%;
 }
+
+
+
 
 .character__container{
 
     margin: 10px;
     margin-top: 20px;
+
     h2{
         font-size: 20px;
     }
@@ -209,8 +217,19 @@
     p{
         font-size: 14px;
     }
+
+    ul{
+        padding: 0;
+    }
 }
 
+.character__img-container img{
+    margin: auto;
+}
+
+.character__text-ul{
+    padding: 0;
+}
 
 
 .slick-next{

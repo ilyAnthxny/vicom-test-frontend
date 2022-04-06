@@ -388,7 +388,7 @@ button {
 }
 
 .questions___item .active {
-  height: 120px;
+  height: 160px;
 }
 
 .questions___item .rotate {
@@ -399,21 +399,14 @@ button {
 .character__subtitle {
   text-align: center;
   font-size: 26px;
+  width: 100%;
+  display: block;
 }
 
 .character__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  display: block;
+  margin: auto;
+  width: 100%;
 }
 
 .character__container {
@@ -427,6 +420,18 @@ button {
 
 .character__container p {
   font-size: 14px;
+}
+
+.character__container ul {
+  padding: 0;
+}
+
+.character__img-container img {
+  margin: auto;
+}
+
+.character__text-ul {
+  padding: 0;
 }
 
 .slick-next {
