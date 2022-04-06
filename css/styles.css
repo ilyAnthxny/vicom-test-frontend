@@ -371,10 +371,25 @@ button {
   text-transform: scale(1.1);
   cursor: pointer;
   font-size: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .questions___item p {
   font-size: 14px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.questions___item .active {
+  height: 120px;
+}
+
+.questions___item .rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .character__subtitle {
