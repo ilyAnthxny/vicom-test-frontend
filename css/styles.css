@@ -424,6 +424,7 @@ button {
 
 .character__container ul {
   padding: 0;
+  font-size: 15px;
 }
 
 .character__img-container img {
